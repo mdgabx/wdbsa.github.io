@@ -97,7 +97,7 @@ h1 {
 
 .accordion-body {
     overflow-y: auto;
-    height: 400px;
+    height: 360px;
 }
 
 .thumbnail {
@@ -169,8 +169,6 @@ h1 {
     border: hidden !important;
     border-color: #FFF !important;
     box-shadow: 0px !important;
-  
-        
   }
   
   .accordion-button:focus {
@@ -192,3 +190,84 @@ h1 {
     justify-content: flex-end;
     flex-direction: column;
   }
+
+  .can-do-con {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .caption {
+    color: #ddd;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .row-con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .personal-info-con {
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    .contacts {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts button {
+        margin: auto;
+    }
+
+    .social-media-icons {
+        width: 100%;
+    }
+
+    .grid-con {
+        margin-bottom: 5em;
+    }
+  }
+
+  @media only screen and (max-width: 769px) {
+
+    .personal-info-con {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-media-icons {
+        width: 60%;
+    }
+
+    .grid-con {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 5em;
+    }
+
+  }     
+
+
+  @media only screen and (max-width: 440px) {
+
+    .personal-info-con {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-media-icons {
+        width: 100%;
+    }
+
+    .grid-con {
+        grid-template-columns: 1fr;
+        margin-bottom: 5em;
+    }
+
+  }     
+
